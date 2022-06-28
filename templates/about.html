@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            About us
+        </title>
+        <link rel = "icon" href = "{{ url_for('static', filename='logo.png') }}"  type = "image/x-icon">
+        <style>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          }  
+          li {
+            float: left;
+            border-right:1px solid #bbb;
+          }
+          li:last-child {
+            border-right: none;
+          }
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          li a:hover:not(.active) {
+            background-color: #111;
+          }
+          .active {
+            background-color: #04AA6D;
+          }</style>
+        </head>
+        <body>
+        <ul class="sidenav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/download">Download</a></li>
+            <li><a href="/functions">Functions</a></li>
+            <li><a class="active" href="/about">About</a></li>
+          </ul>
+        <p>
+            <h2>Some info about the creater :</h2>
+            <h3>I am Adarsh kumar rai.<br>
+            The leader of the project.<br>
+            The name of other members are: Kshitiz Sharma and Sushant Ohlyan.<br>
+            Entropy is designed for self usage and for personal convenience.<br>
+            </h3>
+            <img src="{{url_for('static', filename='logo.png')}}" align="middle" />
+            <img src="{{url_for('static', filename='roon.jpeg')}}" align="middle" height="400px" width="500px" />
+        </p>
+    </body>
+</html>

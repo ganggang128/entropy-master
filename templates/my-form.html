@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Entropy | Home |</title>
+<link rel = "icon" href = "{{ url_for('static', filename='logo.png') }}"  type = "image/x-icon">
+<style>
+.incor{
+  border-radius: 8px ;
+
+}
+label{
+  font-size: 24px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  li:last-child {
+    border-right: none;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  .active {
+    background-color: #04AA6D;
+  }</style>
+</head>
+<body>
+<ul class="sidenav">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="/download">Download</a></li>
+    <li><a href="functions">Functions</a></li>
+    <li><a href="about">About</a></li>
+  </ul>
+  <center><h1>Entropy</h1><hr>
+<form method="POST">
+    <label for="tex">Command :</label>
+    <input class="incor" name="text" id="tex">
+    <input type="submit" value="Execute">
+</form><br></center>
+<ol><h3>
+<li>It's an app designed to control a device using any other device connected over any local network.</li><br>
+<li>The device on which entropy is installed can be operated through any other device.</li><br>
+<li>Entropy generates a QR code and a link that can be used to access that specific device.</li><br>
+<li>Device running entropy becomes the host.</li> 
+<li>You can perform various functions from starting apps to closing an already running app or taking screenshots to shutting down the pc itself.</li>
+<li>The link opens a web page on the other device from which you can control the host device.</li></h3>
+</ol>
+<!--<img src="commands.png">-->
+</body>
+</html>
